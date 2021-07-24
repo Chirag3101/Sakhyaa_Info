@@ -1,23 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import Logo from './resources/Logo.jpg';
+import { Layout, Menu } from 'antd';
+
+const { Header, Content, Footer } = Layout;
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Layout className="layout">
+    <Header>
+      <div/>
+      <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']}>
+      <Menu.Item key="1">
+        <img src={Logo} alt="Logo" style={{height:68, width:175}}/>
+      </Menu.Item>
+      <Menu.Item key="3" style={{marginLeft : "80%" }}>
+              <a href="https://www.google.com">Register</a>
+      </Menu.Item>
+      </Menu>
+    </Header>
+    <Content>
+      <div className="site-layout-content"><h1>Content</h1></div>
+
+    </Content>
+    <Footer style={{ textAlign: 'center' }}>Designed and Developed by Sakhyaa &#9829;</Footer>
+  </Layout>
     </div>
   );
 }
