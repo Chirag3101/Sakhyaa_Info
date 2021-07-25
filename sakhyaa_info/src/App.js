@@ -15,7 +15,7 @@ function App() {
       <Menu.Item key="1">
         <img src={Logo} alt="Logo" style={{height:68, width:175}}/>
       </Menu.Item>
-      <Menu.Item key="3" style={{marginLeft : "80%" }}>
+      <Menu.Item key="3" style={{marginRight : "2%", marginLeft:"Auto" }}>
               <a href="https://www.google.com">Register</a>
       </Menu.Item>
       </Menu>
